@@ -11,14 +11,29 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-            child: Text(
-          "Assalam Alikum ",
-          style: TextStyle(
-              fontSize: 30, fontFamily: "med", fontWeight: FontWeight.bold, color: Color(0xff4B0082)),
-          textAlign: TextAlign.center,
-        
-        )),
+        body: Column(
+          children: [
+            Center(
+                child: Container(
+              width: 500,
+              height: 200,
+              color: Colors.teal,
+              child: Center(
+                child: Text(
+                  "Assalam Alikum ",
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontFamily: "med",
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )),
+            Container(
+                width: 500, height: 300, child: Image.asset("images/p1.jpg"))
+          ],
+        ),
       ),
     );
   }
