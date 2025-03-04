@@ -75,7 +75,7 @@ class _FormScreenState extends State<FormScreen> {
             TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Icons.email),
-                label: Text("Enter Your Name"),
+                label: Text("Enter Your Email"),
                 focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.teal, width: 2),
                     borderRadius: BorderRadius.circular(10)),
